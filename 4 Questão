@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+ float altura;
+ int idade;
+ 
+ printf("digite sua altura: ");
+ scanf("%f", &altura);
+ 
+ 
+ printf("digite sua idade: ");
+ scanf("%d", &idade);
+ 
+ 
+ printf(" Sua altura é %.2f\n Sua idade é %d", altura, idade);
+}
