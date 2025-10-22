@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    int opcao;
+    int confirma;
+    char nome[30];
+
+     while (1) {
+        printf("1 - Cadastrar Aluno\n2 - Listar Alunos\n3 - Sair\n4 - Excluir Alunos\n");
+    scanf("%d", &opcao);
+
+    switch(opcao) {
+        case 1:
+            printf("Digite o nome do aluno para cadastro...\n");
+            scanf("%s", nome);
+            if (nome[0] != '\0') {
+             printf("aluno '%s' cadastrado\n", nome);
+             return 0;
+            } else {
+             printf("Nenhum nome informado. Cadastro cancelado.\n");
+                }
+            break;
+        case 2:
+            printf("Listando os alunos Aguarde\n");
+            return 0;
+            break;
+        case 3:
+            printf("Deseja realmente sair (1=Sim / 0=Não)\n");
+            scanf("%d", &confirma);
+            if (confirma == 1) {
+                printf("saindo...\n");
+                return 0;
+            } else {
+                printf("Voltando ao menu...\n");
+            }
+             break;
+        case 4:
+            printf("Digite o nome do aluno para excluir...\n");
+            scanf("%s", nome);
+            if (nome[0] != '\0') {
+             printf("aluno '%s' Excluido\n", nome);
+             return 0;
+            } else {
+             printf("Nenhum nome informado. exclusão cancelada.\n");
+            }
+            break;
+        
+        default:
+            printf("Opção inválida!\n");
+            break;
+    }
+    
+    }
+    return 0;
+}
