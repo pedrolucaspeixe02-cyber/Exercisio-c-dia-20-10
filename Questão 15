@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+    int soma = 0;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &numero);
+
+    for (int i = 1; i <= numero; i++) {
+        printf("Contador: %d\n", i);
+        soma += i; 
+    }
+
+    printf("\nSomatório de 1 até %d = %d\n", numero, soma);
+
+    return 0;
+}
