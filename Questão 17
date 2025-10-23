@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+     int i = 1;
+     int numero;
+     
+     printf("Digite um numero inteiro:  ");
+     scanf("%d", &numero);
+     
+ while (i <= numero) {
+ printf("i = %d\n", i);
+ i++;
+ }
+
+    return 0;
+}
