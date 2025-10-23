@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+     int i = 1;
+     int numero;
+     
+     printf("Digite um numero inteiro:  ");
+     scanf("%d", &numero);
+      if (numero == 0) {
+        printf("Erro: o numero nao pode ser 0!\n");
+
+      }
+     
+ while (i <= numero) {
+ printf("i = %d\n", i);
+ i++;
+ }
+
+    return 0;
+}
